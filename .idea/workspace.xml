@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="010a39e3-8563-416f-8d98-442d9586f11d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Board_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Board_app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Board_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Board_app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Board_app/includes/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Board_app/new_topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Board_app/new_topic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Board_app/topics.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Board_app/topics.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/static/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/static/css/base.css" afterDir="false" />
-    </list>
+    <list default="true" id="010a39e3-8563-416f-8d98-442d9586f11d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/account/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -208,6 +193,14 @@
       <option name="presentableId" value="Default" />
       <updated>1553860544681</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1554537361802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554537361802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -236,6 +229,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Board_app/tests.py">
@@ -426,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/account/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
