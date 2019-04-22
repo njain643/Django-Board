@@ -20,12 +20,14 @@
          <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="userMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="{% static 'img/blank-profile-picture.png' %}" alt="{{user.username}}">
+                        <img src="{{ MEDIA_URL }}{{ userimage }}"
+                             onerror="this.src={% static 'img/blank-profile-picture.png' %};"/>
+
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
                     <span class="dropdown-item">{{user.first_name}} {{user.last_name}}</span>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">My account</a>
+                    <a class="dropdown-item" href="{% url 'Board_app:myaccount' %}">My account</a>
                     <a class="dropdown-item" href="#">Change password</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
@@ -43,10 +45,9 @@
    </nav>
 
     <div class="container">
-        <ol class="breadcrumb my-4">
-            {% block breadcrumb %}
-            {% endblock %}
-        </ol>
+        {% block breadcrumb %}
+        {% endblock %}
+
         {% block content %}
         {% endblock %}
     </div>

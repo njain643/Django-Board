@@ -35,3 +35,8 @@ class Post(models.Model):
    def __str__(self):
       truncated_message = Truncator(self.message)
       return truncated_message.chars(30)
+
+class MyAccount(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='myaccount')
+    userimage = models.ImageField(upload_to='images/', null=True)
+    uploaded_image_at = models.DateTimeField(auto_now_add=True, null=True)

@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['18.191.196.34','localhost']
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 # Application definition
 
@@ -39,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'widget_tweaks'
+    'widget_tweaks',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -65,10 +69,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'Blog.wsgi.application'
 

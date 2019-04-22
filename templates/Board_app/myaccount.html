@@ -1,0 +1,87 @@
+{% extends 'Board_app/base.html' %}
+{% load static %}
+{% block title %}My Account - {{block.super}}{% endblock %}
+{% block stylesheet %}<link rel="stylesheet" href="{% static 'css/myaccount.css' %}">{% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+        {% for message in messages %}
+              <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                  <strong>{{ message }}</strong>
+              </div>
+            {% endfor %}
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{user.first_name}} {{user.last_name}}</h3>
+            </div>
+            <form method="post" action="{% url 'Board_app:imageupload' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center">
+                  <div class="text-center">
+                    <img src="{{ MEDIA_URL }}{{ userimage }}" class="avatar img-circle img-thumbnail" alt="avatar"><br><br>
+                    <input style="color: transparent;" type="file" name="myfile"><br><br>
+                    <button class="btn btn-success" type="submit">Upload</button>
+                  </div></hr><br>
+                </div>
+                <div class=" col-md-9 col-lg-9 ">
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>First Name:</td>
+                        <td>
+                            {{user.first_name}}
+<!--                            <div class="input-group input-group-sm mb-3">-->
+<!--                              <input name="fname" type="text"  value="{{user.first_name}}" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">-->
+<!--                            </div>-->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Last Name:</td>
+                        <td>
+                            {{user.last_name}}
+<!--                            <div class="input-group input-group-sm mb-3">-->
+<!--                              <input type="text" name="lname"  value="{{user.last_name}}" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">-->
+<!--                            </div>-->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><a href="mailto:{{user.email}}">{{user.email}}</a></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td><button type="submit" class="btn btn-success">Edit Profile</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        <p>First Name: <input type="text" name="firstname" value="{{user.first_name}}"/></p>-->
+<!--        <p>Last Name: <input type="text" name="lastname" value="{{user.last_name}}"/></p>-->
+<!--        <p>Email: <input type="email" name="lastname" value="{{user.email}}"/></p>-->
+<!--        -->
+<!--    </form>-->
+{% endblock %}
+
+
+</html>

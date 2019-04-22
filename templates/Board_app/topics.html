@@ -1,8 +1,10 @@
 {% extends 'Board_app/base.html' %}
 {% block title %}{{ board.name }} - {{ block.super }}{% endblock %}
 {% block breadcrumb %}
+<ol class="breadcrumb my-4">
    <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
    <li class="breadcrumb-item active">{{board.name}}</li>
+</ol>
 {% endblock %}
 {% block content %}
   <div class="mb-4">
